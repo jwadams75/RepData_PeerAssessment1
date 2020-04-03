@@ -394,11 +394,13 @@ activity &lt;- as.data.table(activity)</code></pre>
 <div id="question-2-calculate-and-report-the-mean-and-median-total-number-of-steps-taken-per-day." class="section level3">
 <h3>Question 2: Calculate and report the mean and median total number of steps taken per day.</h3>
 <p>Calculating the mean and median total number of steps taken per day:</p>
-<pre class="r"><code>SumSteps[,as.integer(mean(tot.steps))] </code></pre>
+<pre class="r"><code>mean.tot.steps &lt;- SumSteps[,as.integer(mean(tot.steps))] 
+mean.tot.steps</code></pre>
 <pre><code>## [1] 10766</code></pre>
-<pre class="r"><code>SumSteps[,as.integer(median(tot.steps))] </code></pre>
+<pre class="r"><code>med.tot.steps &lt;- SumSteps[,as.integer(median(tot.steps))] 
+med.tot.steps</code></pre>
 <pre><code>## [1] 10765</code></pre>
-<p>The mean and median number of steps per day are 10,766 and 10,765, respectively.</p>
+<p>The mean and median number of steps per day are 10766 and 10765, respectively.</p>
 </div>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">

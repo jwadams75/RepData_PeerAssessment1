@@ -59,7 +59,8 @@ Calculating the mean and median total number of steps taken per day:
 
 
 ```r
-SumSteps[,as.integer(mean(tot.steps))] 
+mean.tot.steps <- SumSteps[,as.integer(mean(tot.steps))] 
+mean.tot.steps
 ```
 
 ```
@@ -67,14 +68,15 @@ SumSteps[,as.integer(mean(tot.steps))]
 ```
 
 ```r
-SumSteps[,as.integer(median(tot.steps))] 
+med.tot.steps <- SumSteps[,as.integer(median(tot.steps))] 
+med.tot.steps
 ```
 
 ```
 ## [1] 10765
 ```
 
-The mean and median number of steps per day are 10,766 and 10,765, respectively.
+The mean and median number of steps per day are 10766 and 10765, respectively.
 
 
 ## What is the average daily activity pattern?
